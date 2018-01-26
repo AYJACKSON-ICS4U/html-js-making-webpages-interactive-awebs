@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+            }
+            .moon {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+            }
+        </style>
+    </head>
+    <body>
+
+
+    <script>
+        var sun = document.createElement("div");
+        sun.className = "planet";
+        sun.style.backgroundColor = "rgb(255, 201, 5)";
+        sun.style.height = "500px";
+        sun.style.width = "500px";
+        sun.style.top = "-80px";
+        sun.style.left = "-400px";
+        document.body.appendChild(sun);
+
+        var mercury = document.createElement("div");
+        mercury.className = "planet";
+        mercury.style.backgroundColor = "rgb(117, 84, 0)";
+        mercury.style.height = "15px";
+        mercury.style.width = "15px";
+        mercury.style.left = "350px";
+        sun.appendChild(mercury);
+
+        var venus = document.createElement("div");
+        venus.className = "planet";
+        venus.style.backgroundColor = "rgb(255, 255, 143)";
+        venus.style.height = "15px";
+        venus.style.width = "15px";
+        venus.style.left = "420px";
+        sun.appendChild(venus);
+
+        var moonDiv = document.createElement("div");
+        moonDiv.className = "moon";
+        sun.appendChild(moonDiv);
+
+
+    </script>
+    </body>
+</html>
